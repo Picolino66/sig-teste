@@ -1,0 +1,124 @@
+/* Estilos do modulo Usuario */
+#conteudo_principal h2.titulo {
+  background: transparent url(https://sig.ufla.br/imgs/icones/grupos.gif) 0% 60% no-repeat;
+  padding-left: 25px;
+}
+
+#lista_usuarios_grupos .label,
+#lista_usuarios .label,
+#lista_usuarios .inativo {
+  clear: left;
+  display: block;
+  float: left;
+  font-weight: bolder;
+  line-height: 1.5em;
+  text-align: right;
+  width: 65%;
+}
+
+#lista_usuarios_grupos .opcoes,
+#lista_usuarios .opcoes {
+  clear: right;
+  float: left;
+  width: 34%;
+}
+
+#tabela_log td {
+  border-right: 1px dotted #6688BB;
+  padding-left: 1em;
+  padding-right: 1em;
+  vertical-align: top;
+}
+
+#lista_letras {
+  text-align: center;
+}
+
+#lista_letras a,
+#lista_letras strong {
+  font-size: 80%;
+}
+
+#form_busca {
+  margin-bottom: 15px;
+}
+
+#aba_pessoal {
+  background-image: url(../../imgs/icones/perfil.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#aba_senha {
+  background-image: url(../../imgs/icones/bloqueado.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#aba_contatos {
+  background-image: url(../../imgs/icones/telefone.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#aba_docente {
+  background-image: url(../../imgs/icones/docente.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#aba_tecnico {
+  background-image: url(../../imgs/icones/atividade.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#aba_veiculos {
+  background-image: url(../../imgs/icones/veiculo.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 26px;
+}
+
+#aba_configuracoes_pessoais {
+  background-image: url(../../imgs/icones/layout.gif);
+  background-position: 5px 60%;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+/* Itens Invisiveis */
+#lista_letras span,
+#area_vetor_grupos {
+  display: none;
+}
+
+#form_inserir_veiculo div.campo label {
+    width: 30%;
+}
+
+#form_inserir_veiculo div.campo div {
+    width: 65%;
+}
+
+#form_alterar_veiculo div.campo label {
+    width: 30%;
+}
+
+#form_alterar_veiculo div.campo div {
+    width: 65%;
+}
+
+p.clear {
+  height: 20px;
+}
+p a.rss {
+  float: right;
+  font-size: 80%;
+  height: 14px;
+}

@@ -1,0 +1,24 @@
+//
+// SIG - Sistema Integrado de Gestao
+// Descricao: Javascript da pagina de index
+// License: LICENSE.TXT
+//
+
+registrar_onload(function(){
+
+    var btn_fechar = document.getElementById("banner_fechar");
+    var banner = document.getElementById("banner");
+
+    if (banner) {
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            if (evt.keyCode == 27) { // 27 eh o keycode da tecla esc. Assim dah pra fechar o banner sem ter de clicar no x.
+                banner.style.display = 'none';
+            }
+        };
+        btn_fechar.onclick = function () {
+            banner.style.display = 'none';
+        };
+    }
+
+});

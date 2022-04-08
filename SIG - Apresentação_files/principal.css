@@ -1,0 +1,133 @@
+/*
+ * ESTILOS DA PAGINA PRINCIPAL
+ */
+#centro_principal {
+  padding-right: 16em;
+}
+
+#centro_secundario {
+  float: right;
+  text-align: right;
+  width: 15em;
+  position: relative;
+  top: 0%;
+  right: 0%;
+  z-index: 100;
+}
+
+#centro_secundario .calendario {
+  margin: 0 0 0 auto;
+  text-align: left;
+  width: auto;
+}
+
+div.aviso_manutencao {
+  box-shadow: 1px 1px 5px #AAAAAA;
+  max-height: 400px;
+  opacity: 0.92;
+  overflow: auto;
+  text-align: left;
+  width:100%;
+  z-index: 1000;
+  background-color: #FFF8DC;
+  border: 1px outset #FF8C00;
+  color: #FF8C00;
+  padding: 8px 2px;
+  display: block;
+  margin: 1em 0;
+}
+
+.aniversario {
+  color: #0000AA;
+  font-family: Times;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: bolder;
+  margin: 1em;
+  text-align: center;
+  text-shadow: 2px 2px 5px #883300;
+}
+
+#frase_dia {
+  margin: 1em 0;
+  background-color: #F4F8FF;
+  padding: 1em;
+  box-shadow: 2px 2px 5px #CCCCCC;
+  -moz-box-shadow: 2px 2px 5px #CCCCCC;
+  -moz-border-radius: 1em;
+}
+#frase_dia h2 {
+  border: 0;
+  color: #AABBDD;
+  text-shadow: none;
+  font-style: italic;
+  text-decoration: none;
+}
+#frase_dia blockquote {
+  font-family: georgia;
+  font-style: italic;
+  color: #004477;
+  margin: .5em;
+}
+#frase_dia p.autor_citacao {
+  color: #AABBDD;
+  font-family: georgia;
+  font-size: .8em;
+  font-style: italic;
+  text-align: right;
+}
+
+.rss {
+  font-size: 80%;
+}
+
+noscript p {
+  border: 1px dotted #FF0000;
+  color: #880000;
+  display: block;
+  padding: .5em 1em;
+}
+
+.aviso_sair {
+  border: 1px solid #FF0000;
+  background-color: #FFDDDD;
+  color: #990000;
+  font-size: 1.2em;
+  margin: 1em 0;
+  padding: .8em 1em;
+  text-align: justify;
+  box-shadow: 0px 0px 10px #AAAAAA;
+  border-radius: 1em;
+  -moz-box-shadow: 0px 0px 10px #AAAAAA;
+  -moz-border-radius: 1em;
+}
+
+.aviso_sair img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* APRESENTACAO */
+#texto_apresentacao {
+  background-color: #FAFAFA;
+  border: 1px solid #000000;
+  margin:1em;
+  padding: 1em 1.5em;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+#texto_apresentacao p,
+#texto_apresentacao li {
+  margin: .2em 0 .5em 0;
+  text-align: justify;
+}
+
+#aviso_questionario {
+	
+background-color: rgb(255, 255, 221);
+border: 1px solid rgb(68, 68, 0);
+margin: 2em 1em 1em;
+padding: 1em;
+border-radius: 1em 1em 1em 1em;
+box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+
+}

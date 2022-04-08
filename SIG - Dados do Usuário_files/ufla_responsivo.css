@@ -1,0 +1,2410 @@
+@charset "utf-8";
+
+img.arroba {
+  vertical-align: text-bottom;
+}
+
+a:link,
+a img:active,
+a:active img,
+a:active,
+a:visited img,
+a:visited {
+  outline: 0;
+}
+
+/* Links RSS */
+a.rss {
+  background-image: url(https://sig.ufla.br/imgs/icones/rss.gif);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  padding-left: 20px !important;
+}
+
+a.rss:hover {
+  color: #FFAB1B;
+}
+
+/* Listas de Definicoes */
+dt {
+  font-weight: bolder;
+}
+dt:after {
+  content: ':';
+}
+
+/* Titulos */
+h2 {
+  font-size: 100%;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+/* Acronimos e Abreviacoes */
+acronym,
+abbr {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+acronym:hover,
+abbr:hover {
+  border-bottom: 0px;
+  border-top: 1px dotted;
+}
+
+/* Paragrafos */
+p {
+  margin: 5px;
+}
+
+/* Texto Pre-formatado*/
+pre,
+code {
+  font-family: "Courier New", Monospace;
+  letter-spacing: 1px;
+  margin: 1px 0px 1px 0px;
+}
+
+ul, ol {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+ol ol {
+  list-style-type: upper-latin;
+}
+ol ol ol {
+  list-style-type: lower-latin;
+}
+
+/***********
+ * CLASSES *
+ ***********/
+
+/* Gerais */
+.clear {
+  clear: both;
+}
+
+p.fim,
+br.clear {
+  clear: both !important;
+  display: block !important;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+br.clear {
+  float: none !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.caps_lock {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #FFEEEE;
+  border: 1px solid #990000;
+  border-top: 0;
+  color: #FF0000;
+  display: block;
+  font-size: .8em;
+  font-weight: bolder;
+  margin: 0 1em;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: blink;
+}
+
+.fala {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin: -9px 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Cores de relevancia */
+.verde {
+  color: #006600;
+}
+.amarelo {
+  color: #999900;
+}
+.vermelho {
+  color: #CC0000;
+}
+
+/* Dados */
+.dados {
+  display: block;
+  margin: 5px auto 20px auto;
+  padding: 5px 4px;
+  width: auto;
+}
+
+.dados .titulo {
+  clear: both;
+  display: block;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.dados .rodape {
+  clear: both;
+  display: block;
+  padding: .1em 0;
+}
+
+.dados .rodape span {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.dados ul.relacionamento li strong {
+  display: none;
+}
+
+/* Listas de dados */
+.lista .linha {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.lista .label,
+.lista .inativo {
+  display: block;
+  float: left;
+  font-weight: bolder;
+  line-height: 1.5em;
+  text-align: right;
+  width: 70%;
+}
+
+.lista .label:after,
+.lista .inativo:after {
+  content: ':';
+}
+
+.lista table .label:after,
+.lista table .inativo:after {
+  content: '';
+}
+
+.lista table.tabela {
+  width: 100%;
+}
+
+.lista .opcoes {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  float: left;
+  padding: 0;
+  width: 29%;
+}
+
+.lista .opcoes * {
+  vertical-align: middle;
+}
+
+table.tabela .opcoes {
+  float: none;
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.lista .opcoes img {
+  margin: 0 0 0 5px;
+}
+
+table.tabela .opcoes img {
+  margin: 0 0 0 4px;
+}
+
+.lista .opcoes a {
+  padding: 0;
+}
+
+.lista .opcoes span {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  text-align: center;
+  width: 20px;
+}
+.lista .opcoes span.nenhuma_opcao {
+  width: auto;
+}
+
+.lista .label + div strong,
+.lista .inativo + div strong,
+.lista + hr {
+  display: none;
+}
+
+/*
+ * FIELDSET
+ */
+fieldset legend {
+  cursor: default;
+}
+
+.dados fieldset {
+  clear: both;
+  margin: 15px 1em;
+}
+
+.dados fieldset legend {
+  font-weight: bold;
+  padding: 0px 15px 0px 15px;
+  margin-left: 15px;
+}
+
+/* Observacoes */
+.observacao {
+  margin: 1em 0;
+  padding-top: .2em;
+}
+
+/* Erros, Avisos e Comentarios */
+div.erro,
+div.aviso,
+.comentario {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Erros, Avisos */
+div.erro,
+div.aviso {
+  box-shadow: 1px 1px 10px #AAAAAA;
+  max-height: 400px;
+  min-height: 3em;
+  opacity: 0.92;
+  overflow: auto;
+  text-align: left;
+  top: 0px !important;
+  width: 40em;
+  z-index: 1000;
+}
+
+div.erro:hover,
+div.aviso:hover {
+  opacity: 1;
+}
+
+/* Janela Modal */
+.janela_modal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  padding: 3% 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+.janela_modal div.conteudo {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px 10px 10px 10px;
+  border: 1px solid #888;
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;  
+  min-width: 500px;
+  min-height: 200px;
+  position: relative;
+}
+
+.janela_modal span.fechar {
+  color: #bbb;
+  z-index: 102;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.janela_modal span.fechar:hover,
+.janela_modal span.fechar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.janela_modal div.conteudo div {
+  width: auto;
+  height: 100%;
+}
+
+.janela_modal div.conteudo div iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+div.erro,
+div.aviso {
+  border-top: 0px;
+  margin-left: -20em;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  position: fixed !important;
+  top: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 1px 1px 7px #808080;
+}
+
+div.erro {
+  left: 49%;
+}
+
+div.aviso {
+  left: 51%;
+}
+/* Listas */
+ul.simples,
+ol.simples {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* Erros */
+.erro {
+  background-color: #FFF5F5;
+  border: 1px outset #FF0000;
+  color: #991111;
+}
+.erro ul {
+  list-style-image: url(https://sig.ufla.br/imgs/icones/li_erro.gif);
+}
+td.erro {
+  margin: 0px;
+  padding: 1px;
+}
+
+/* Avisos */
+.aviso {
+  background-color: #F5FFF5;
+  border: 1px outset #009900;
+  color: #009900;
+}
+
+.aviso ul {
+  list-style-image: url(https://sig.ufla.br/imgs/icones/li_aviso.gif);
+}
+
+/* Comentarios */
+.comentario {
+  clear: both;
+  display: block;
+  font-size: small;
+  text-align: justify;
+}
+
+/* Comentario de Ajuda */
+.bloco_ajuda_aberto,
+.bloco_ajuda_fechado {
+  margin-bottom: 1em;
+  text-align: right;
+}
+
+/* Texto da ajuda */
+.bloco_ajuda_aberto blockquote,
+.bloco_ajuda_fechado blockquote {
+  font-size: 90%;
+  padding: 1px;
+}
+.bloco_ajuda_aberto blockquote {
+  clear: both;
+  display: block;
+  text-align: justify;
+}
+.bloco_ajuda_fechado blockquote {
+  border: 0;
+  display: none;
+}
+
+/* Acessibilidade */
+.acessivel {
+  background: transparent  url(https://sig.ufla.br/imgs/icones/acessivel.gif) 2% 50% no-repeat;
+  padding: 2px 5px 2px 22px;
+}
+
+/* Botao de ajuda */
+.bloco_ajuda_aberto a.ajuda,
+.bloco_ajuda_fechado a.ajuda {
+  background: transparent url(https://sig.ufla.br/imgs/icones/ajuda.gif) 2% 50% no-repeat;
+  cursor: help;
+  font-size: 12px;
+  padding: 2px 5px 2px 22px;
+}
+
+/* Carregando */
+.carregando {
+  background-color: #FFFFFF;
+  border: 1px outset #CCCCCC;
+  color: #707070;
+  display: block;
+  font-weight: bolder;
+  height: 1.8em;
+  line-height: 1.8em;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: .1em 1em;
+  width: 11em;
+  z-index: 100;
+}
+div.carregando {
+  position: fixed;
+  left: 0px;
+  padding: 0 .1em .2em 0;
+  text-shadow: #DDDDDD 1px 1px 1px;
+  top: 0px;
+}
+
+div.carregando * {
+  margin: .5em;
+  vertical-align: middle;
+}
+
+div.carregando img {
+  margin-right: 1em;
+}
+
+/* Informacoes */
+.info {
+  font-size: 80%;
+  padding: 1px;
+}
+
+/* Lista de Opcoes */
+.opcoes {
+  padding: 2px 10px;
+}
+
+.opcoes a {
+  font-size: 90%;
+  padding: 0px 5px;
+}
+
+/* Campos de relacionamento */
+a.relacionamento,
+a.hierarquia {
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  padding-left: 25px;
+}
+
+a.relacionamento {
+  background-image: url(https://sig.ufla.br/imgs/icones/buscar.gif);
+}
+
+a.hierarquia {
+  background-image: url(https://sig.ufla.br/imgs/icones/hierarquia.gif);
+}
+
+ul.hierarquia,
+ul.hierarquia li,
+ul.hierarquia li .lb,
+ul.hierarquia li .l,
+ul.hierarquia li .valor {
+  clear: both;
+  display: block;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.hierarquia {
+  margin-left: .2em;
+}
+
+ul.hierarquia li .lb {
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  height: .7em;
+  width: .7em;
+}
+
+ul.hierarquia li .l {
+  border-left: 1px solid #000000;
+}
+
+ul.hierarquia li .valor {
+  clear: right;
+  margin-top: -.7em;
+  padding-left: 1.2em;
+}
+
+ul.hierarquia li .valor img.bt_expandir {
+   background-color: #FFFFFF;
+   border: 0;
+   cursor: pointer;
+   margin-right: .5em;
+}
+
+/* Caixa de opcoes (Janela) */
+.caixa {
+background-color: #CCCCD5;
+  border: 1px outset #CCCCD5;
+  display: block;
+  position: absolute;
+  text-align: left;
+  width: 25em;
+}
+
+.caixa h2.titulo {
+  background-color: #FFFFFF;
+  background-image: none;
+  border: 1px inset #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.caixa h2.titulo div.texto,
+.caixa h2.titulo div.botoes {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.caixa h2.titulo div.texto {
+  float: left;
+  padding-left: 1%;
+  width: 80%;
+}
+
+.caixa h2.titulo div.botoes {
+  float: right;
+  width: 15%;
+}
+
+.caixa h2.titulo div.botoes .bt_fechar {
+  background: #CCCCCC url(https://sig.ufla.br/imgs/icones/cancelar.gif) 50% 50% no-repeat;
+  border: 1px outset #CCCCCC;
+  cursor: default;
+  float: right;
+  height: 16px;
+  margin: 0;
+  text-indent: -10000px;
+  width: 16px;
+}
+.caixa h2.titulo div.botoes .bt_fechar:hover {
+  background-color: #DDDDDD;
+}
+
+.caixa div.status {
+  border: 1px inset #CCCCCC;
+  height: 1.3em;
+  margin: 0 4px 5px 4px;
+  padding: 1px .6em;
+}
+
+.caixa div.busca {
+  padding: .1em .3em;
+}
+.caixa div.busca label {
+  background-image: url(https://sig.ufla.br/imgs/icones/buscar.gif);
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  cursor: pointer;
+  font-weight: bolder;
+  padding-left: 25px;
+  width: 5em;
+}
+.caixa div.busca label:after {
+  content: ': ';
+}
+.caixa div.busca input {
+  border: 1px solid #404040;
+  width: 15em;
+}
+.caixa div.busca img.bt_atualizar {
+  border: 0;
+  cursor: pointer;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+
+.caixa div.itens_hierarquico,
+.caixa div.itens,
+.caixa div.conteudo {
+  min-height: 12em;
+  border: 1px inset #FFFFFF;
+  margin: 5px;
+}
+.caixa div.itens_hierarquico,
+.caixa div.conteudo {
+  height: 260px;
+  overflow: auto;
+}
+.caixa div.itens_hierarquico,
+.caixa div.itens {
+  background-color: #FFFFFF;
+}
+.caixa div.itens select {
+  width: 100%;
+}
+
+/* Abas */
+.abas {
+  clear: both;
+  display: block;
+  margin: 10px 2px;
+  text-align: left;
+}
+
+.abas .nomes_abas span {
+  display: none;
+}
+
+.abas .nomes_abas a {
+  background-color: #EEEEEE;
+  border-top: 1px outset #909090;
+  border-left: 1px outset #909090;
+  border-right: 1px outset #909090;
+  margin-left: 1em;
+  padding: 0 1em;
+  position: relative;
+  white-space: nowrap;
+}
+
+.abas .nomes_abas a:hover,
+.abas .nomes_abas a:active,
+.abas .nomes_abas a.ativa {
+  background-color: #FFFFFF;
+}
+.abas .nomes_abas a.ativa {
+  top: 1px;
+}
+
+.abas .conteudo_aba {
+  background-color: #FFFFFF;
+  border: 1px outset #909090;
+  padding: 5px 10px 15px 10px;
+}
+
+/* Diretorios e Arquivos */
+.arquivo,
+.diretorio,
+.diretorio_aberto,
+.diretorio_fechado {
+  background-position: 0% 60%;
+  background-repeat: no-repeat;
+  line-height: 20px;
+  min-height: 20px;
+  padding-left: 20px;
+}
+.arquivo {
+  background-image: url(https://sig.ufla.br/imgs/icones/arq_web.gif);
+}
+.diretorio {
+  background-image: url(https://sig.ufla.br/imgs/icones/diretorio_fechado.gif);
+}
+.diretorio_aberto {
+  background-image: url(https://sig.ufla.br/imgs/icones/diretorio_aberto.gif);
+}
+.diretorio_fechado {
+  background-image: url(https://sig.ufla.br/imgs/icones/diretorio_fechado.gif);
+}
+
+/* Textos */
+.texto h1,
+.texto h2,
+.texto h3,
+.texto h4,
+.texto h5 {
+  border: 0px;
+}
+
+.texto p {
+  line-height: 1.4em;
+  margin-top: 1.3em;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.texto h1 + p,
+.texto h2 + p,
+.texto h3 + p,
+.texto h4 + p,
+.texto h5 + p {
+  margin-top: 5px;
+  text-indent: 0em;
+}
+
+.texto pre {
+  font-size: 80%;
+  margin: 20px;
+}
+
+/* Setas */
+.seta {
+  font-weight: bolder;
+}
+
+/* Formularios */
+form a.ajuda span {
+  background-color: #FFFFFF;
+  border: 1px outset #CCCCCC;
+  color: #000000;
+  cursor: default;
+  display: none;
+  font-size: .8em;
+  font-weight: normal;
+  padding: .5em;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  width: 200px;
+  opacity: 0.9;
+}
+
+form a.ajuda:hover span {
+  display: block;
+}
+
+form a.ajuda a img {
+  border: 1px solid #000000;
+  margin: 0 .3em;
+}
+
+/* Formulario de paginacao */
+.form_paginacao {
+  display: block;
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.form_paginacao label,
+.form_paginacao div {
+  margin: 0 2px;
+  font-weight: normal;
+  display: inline;
+}
+
+.form_paginacao label:after {
+  content: ':';
+}
+.form_paginacao input[type='submit'] {
+  border: 1px solid #CCCCCC;
+  cursor: pointer;
+}
+
+/* FORMULARIO */
+.formulario input[disabled], .formulario select[disabled] {
+  color: #BB2222 !important;
+  background-color: #CBCBCB;
+}
+.formulario input.texto[disabled] {
+  background-image: none;
+  background-color: #BBBBBB;
+}
+
+.formulario hr {
+  float: left;
+  width: 100%;
+}
+
+.formulario label.escolha:after {
+  content: '' !important;
+}
+
+.formulario .sim_nao label.escolha {
+  clear: none;
+  display: block;
+  float: left;
+  text-align: left;
+  width: 30%;
+  white-space: nowrap;
+}
+
+/* CAMPOS DE DATA E HORA */
+.formulario .data_hora,
+.formulario .data {
+  clear: both;
+  display: block;
+}
+
+.formulario .data_hora .hora,
+.formulario .data_hora .minuto,
+.formulario .data_hora .segundo {
+  width: 4em;
+}
+
+.formulario .data .dia {
+  width: 3.5em;
+}
+
+.formulario .data .mes {
+  width: 7.5em;
+}
+
+.formulario .data .ano {
+  width: 4.5em;
+}
+
+.formulario .data span,
+.formulario .data_hora span {
+  font-size: 1.3em;
+  margin: 0 .2em;
+  vertical-align: middle;
+}
+
+/* CAMPOS DE TELEFONE */
+.formulario .telefone input.ddd {
+  width: 2em;
+}
+.formulario .telefone select.ddd {
+  width: 4em;
+}
+.formulario .telefone input.numero {
+  width: 8em;
+}
+.formulario .telefone input.ramal {
+  width: 4em;
+}
+
+/* CAMPOS DE BUSCA */
+.formulario div.campo div.resultado_campo_busca {
+  background-color: #CCCCCC;
+  border: 1px outset #CCCCCC;
+  display: none;
+  padding: .5em !important;
+  position: absolute;
+  width: 300px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, ou outro WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, ou outro Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.formulario .resultado_campo_busca select {
+  cursor: pointer;
+}
+
+.formulario .resultado_campo_busca_completa {
+   width:100% !important;
+}
+
+div.resultado_campo_selecao_busca_simples {
+  background-color: #DDDDDD;
+  border: 1px outset #CCCCCC;
+  display: none;
+  padding: 0.2em;
+  position: absolute;
+  z-index: 100;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, ou outro WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, ou outro Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+div.resultado_campo_selecao_busca {
+  background-color: #eeeeee;
+  border: 1px outset #CCCCCC;
+  display: none;
+  padding: 0.2em !important;
+  position: absolute;
+  z-index: 100;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, ou outro WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, ou outro Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+div.resultado_campo_selecao_busca label {
+  display: inline !important;
+  float: none !important;
+  width: auto !important;
+}
+div.resultado_campo_selecao_busca div {
+  width: 100% !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, ou outro WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, ou outro Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+div.resultado_campo_selecao_busca div.cabecalho_campo_selecao_busca {
+  padding: 2px !important;
+}
+div.resultado_campo_selecao_busca input[type='button'] {
+  border: 1px solid #aaaaaa;
+  cursor: pointer;
+}
+div.resultado_campo_selecao_busca input {
+  margin: 0 2px 0 0 !important;
+}
+div.resultado_campo_selecao_busca a.bt_fechar {
+  background: #DDD url(https://sig.ufla.br/imgs/icones/cancelar.gif) 70% 80% no-repeat;
+  border: 1px outset #CCCCCC;
+  cursor: pointer;
+  float: right;
+  margin: 0;
+  text-indent: -10000px;
+  width: 18px;
+}
+div.resultado_campo_selecao_busca div.cabecalho_pagina_campo_selecao_busca {
+  padding: 0.1em 0 !important;
+  margin: 0.1em 0 !important;
+  text-align: center !important;
+  background-color: #E5E5E5;
+  border: 1px solid #CCCCCC;
+  font-size: 0.9em;
+}
+div.resultado_campo_selecao_busca div.cabecalho_pagina_campo_selecao_busca span {
+  padding: 0em 0.3em;
+}
+div.resultado_campo_selecao_busca div.cabecalho_pagina_campo_selecao_busca strong {
+  cursor: pointer;
+}
+div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca {
+  margin-top: 2px !important;
+}
+div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca span {
+  float: left;
+  width: 40%;
+  font-weight: bold;
+}
+div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca div {
+  float: right;
+  text-align: right;
+  width: 60% !important;
+}
+div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca select, 
+div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca input,
+div.resultado_campo_selecao_busca div.cabecalho_campo_selecao_busca input {
+  width: auto;
+}
+
+.formulario .info_aguarde_sugestao {
+  float: left;
+  font-size: .8em;
+  margin-top: .3em;
+  width: 100%;
+}
+
+/* Graficos */
+.area_grafico {
+  text-align: center;
+  margin: .1em 0 1em 0;
+}
+.area_grafico img {
+  margin: 0 auto;
+}
+.area_grafico p {
+  margin: 0;
+}
+.area_grafico a {
+  font-size: .8em;
+}
+.area_grafico + map area {
+  cursor: help;
+}
+
+/* Graficos de barra */
+.grafico_barra {
+  clear: both;
+}
+.grafico_barra strong,
+.grafico_barra span {
+  display: block;
+  float: left;
+}
+.grafico_barra strong {
+  clear: left;
+  cursor: pointer;
+  text-align: right;
+  padding-right: .3em;
+  width: 10em;
+}
+.grafico_barra span {
+  clear: right;
+  margin: .1em 0;
+  width: 25em;
+}
+
+.grafico_barra span span {
+  background-color: #DDDDDD;
+  border: .1em inset #DDDDDD;
+  display: block;
+  height: .8em;
+  line-height: .8em;
+  margin: 0;
+  width: inherit;
+}
+.grafico_barra span span span {
+  background-color: #000033;
+  border: .1em outset #000033;
+  display: block;
+  height: .6em;
+  line-height: .6em;
+}
+.grafico_barra span span span span {
+  background-color: #FFFF00;
+  border: 0;
+  display: none;
+  font-weight: bolder;
+  height: 1em;
+  line-height: 1em;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 3em;
+}
+.grafico_barra strong:hover + span span span {
+  background-color: #000088;
+  border-color: #000088;
+}
+.grafico_barra strong:hover + span span span span {
+  background-color: #FFFF00;
+  border: 0;
+  display: block;
+}
+
+.nicEdit-main {
+  background-color: #fff;
+  border: 1px #ddd inset;
+}
+.nicEdit-main div {
+  width: auto !important;
+  float: none !important;
+  clear: both !important;
+  display: block;
+}
+
+/*
+* Estilos da Validação HTML5
+*/
+input:invalid {
+  color: red !important;
+}
+
+.opcoes_exportacao {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+}
+
+.opcoes_exportacao button {
+  padding: 1px 2px;
+  margin: 0px 3px 0px 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.opcoes_exportacao button img {
+  vertical-align: middle;
+}
+
+/********************
+ * ATRIBUTOS GERAIS *
+ ********************/
+
+* {
+  z-index: 1;
+}
+
+/* Body */
+body {
+  background-color: #FFFFFF;
+  direction: ltr;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  margin: 0px 0px 5px 0px;
+}
+
+/* Links */
+a {
+  color: #337733;
+  text-decoration: none;
+  transition: color 2s;
+}
+a:hover {
+  color: #44AA44;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 1s;
+}
+
+a.inserir {
+  background-image: url(https://sig.ufla.br/imgs/icones/adicionar.gif);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 20px !important;
+}
+
+a.importar {
+  background-image: url(https://sig.ufla.br/imgs/icones/importar.gif);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 20px !important;
+}
+
+a.inconsistencia {
+  background-image: url(https://sig.ufla.br/imgs/icones/bug.gif);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 20px !important;
+}
+
+a.ini {
+  background-image: url(https://sig.ufla.br/imgs/icones/arq_ini.gif);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 20px !important;
+}
+
+a img {
+  border: 0px;
+  opacity: 0.5;
+  transition: opacity 2s;
+}
+
+a:hover img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+dd:active {
+  color: #009900;
+}
+
+
+/* Linhas */
+hr {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+h2, hr {
+  border-bottom: 1px #90DD9A solid;
+  text-shadow: #AAAAAA 2px 1px 2px;
+}
+
+p:active {
+  color: #00AA00;
+}
+
+/* Listas */
+ul {
+  list-style-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/li.gif);
+}
+
+/***********
+ * CLASSES *
+ ***********/
+
+/* Dados */
+.dados {
+  background: #EEEEEE;
+  border: 1px outset #CCCCCC;
+  box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+.dados .titulo {
+  background-color: #F5FFF5;
+  border: 1px outset #F5FFF5;
+}
+
+.dados .rodape {
+  border-top: 1px solid #CCCCCC;
+}
+
+/*
+ * FIELDSET
+ */
+.dados fieldset {
+  border-radius: 10px;
+  background-color: #E5E5E5;
+  border: 1px outset #C5C5C5;
+  padding: 5px;
+}
+
+.dados fieldset legend {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px outset #DDDDDD;
+}
+
+/* Observacoes */
+.observacao {
+  background: transparent url(https://sig.ufla.br/layout/ufla_responsivo/imgs/observacao.jpg) left top no-repeat;
+}
+
+/* Comentarios */
+.comentario {
+  border: 1px dotted #909ADD;
+  background-color: #FFFFFF;
+  color: #000055;
+}
+
+/* Comentario de Ajuda */
+
+/* Texto da ajuda */
+.bloco_ajuda_aberto blockquote,
+.bloco_ajuda_fechado blockquote {
+  color: #000066;
+}
+.bloco_ajuda_aberto blockquote {
+  border: 2px dotted #909ADD;
+  background-color: #FFFFFF;
+}
+
+/* Botao de ajuda */
+.bloco_ajuda_aberto a.ajuda {
+  background-color: #DDDDDD;
+  border: 1px inset #DDDDDD;
+}
+
+.bloco_ajuda_fechado a.ajuda {
+  background-color: #EEEEEE;
+  border: 1px outset #EEEEEE;
+}
+
+/* Informacoes */
+.info {
+  border: 1px dotted #90DD9A;
+  color: #006600;
+}
+
+/* Lista de Opcoes */
+div.opcoes {
+  background-color: #EEEEEE;
+  border: 1px outset #CCCCCC;
+  box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+div.opcoes span {
+  color: #AAB0BB;
+}
+
+/* Lista de busca */
+ul.lista_busca span {
+  color: #808080;
+}
+
+/* Inativos */
+.inativo {
+  color: #AAAAAA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+/*************************
+ * ATRIBUTOS ESTRUTURAIS *
+ *************************/
+#titulo_pagina,
+#navegacao,
+#rodape,
+#conteudo {
+  clear: both;
+  display: block;
+  margin: 0px;
+}
+
+/*
+ * TITULO
+ */
+
+#titulo_pagina {
+  background-color: #076c40;
+  background: linear-gradient(180deg, #235844, #50996e, #076c40, #01573c, #01663e);
+  border-top: #235844 solid 1px;
+  color: #F5FFF5;
+  padding: 0px;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rock Salt'), url('https://sig.ufla.br/layout/ufla_responsivo/fonts/RockSalt/RockSalt.ttf') format('woff');
+}
+
+#titulo_pagina h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#titulo_pagina h1 img {
+  vertical-align: top;
+  margin-left: 0px;
+}
+
+#titulo_pagina h1,
+#titulo_pagina em {
+  display: block;
+  float: left;
+  line-height: 70px;
+  position: relative;
+}
+#titulo_pagina em {
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: bolder;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+#titulo_pagina h1 a {
+  color: #F5FFF5;
+  text-decoration: none;
+}
+
+#titulo_pagina h1 a:hover {
+  color: #CCCFCC;
+}
+
+#titulo_pagina .idealizacao {
+  float: right;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin: 13px 10px 5px 10px;
+  text-align: right;
+}
+
+#titulo_pagina .menu_usuario {
+  font-size: 17px;
+  height: 50px;
+  margin: 13px 10px 5px 10px;
+  text-align: right;
+  text-shadow: none;
+  line-height: 1.5em;
+  top: 0%;
+  right: 0%;
+  position: absolute;
+}
+
+#titulo_pagina .menu_usuario ul li {
+  list-style: none;
+  display: inline;
+  padding-left: 15px;
+}
+
+#menu_usuario_alt {
+  display: none;
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  height: 50px;
+  text-align: right;
+
+  }
+#menu_usuario_alt ul {
+  margin: 0;
+  height: 100%;
+}
+
+#menu_usuario_alt ul li {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+}
+
+#menu_usuario_alt ul li:hover {
+  background-color: #4b9169;
+}
+
+#menu_usuario_alt a {
+  list-style: none;
+  display: inline;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+#menu_usuario_alt a img {
+  width: auto;
+  height: 24px;
+  margin: 12px 8px 0 8px;
+  -webkit-transition: none;
+  transition: none;
+  opacity: 1;
+  transition: none;
+}
+
+#menu_usuario_alt a:hover img {
+  opacity: 1;
+  transition: none;
+}
+
+#titulo_pagina .menu_usuario a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+#titulo_pagina .menu_usuario a:hover {
+  text-decoration: underline;
+}
+
+#titulo_pagina #opcoes {
+  background: url(https://sig.ufla.br/imgs/icones/menu_usuario.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+
+#titulo_pagina #ajuda {
+  background: url(https://sig.ufla.br/imgs/icones/menu_ajuda.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+
+#titulo_pagina #saida {
+  background: url(https://sig.ufla.br/imgs/icones/menu_sair.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+
+#select_vinculos_usuario {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #999;
+  font-size: 0.9em;
+}
+
+#select_vinculos_usuario:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#select_vinculos_usuario option {
+  color: #000;
+  background-color: #fff;
+}
+
+/*
+ * NAVEGACAO
+ */
+#navegacao {
+  background-color: #022a2e;
+  background: linear-gradient(180deg, #022a2e, #224271, #21406e, #1c2b42);
+  color: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 18px;
+  padding: 10px 16px;
+  box-shadow: 0px 2px 5px 1px #b8b8b8;
+}
+
+#navegacao * {
+  padding: 0 .2em;
+}
+
+#navegacao a {
+  color: #AAEEAA;
+}
+
+#navegacao a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*
+ * CONTEUDO
+ */
+#conteudo {
+  padding: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#conteudo_principal {
+  float: left;
+  width: 75%;
+}
+#conteudo_secundario {
+  float: left;
+  width: 25%;
+}
+
+
+/*
+ * MENU E CENTRO
+ */
+#centro,
+#menu {
+  margin: 0 auto 0 0;
+  padding: 2px;
+}
+
+#centro {
+  margin-left: 0px;
+  padding: 0px 10px 5px 10px;
+  width: auto;
+}
+
+#menu h2 {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+#menu h2 + strong {
+  border-top-right-radius: 25px;
+}
+
+#menu {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #EEEEEE;
+  border: 1px outset #DDDDDD;
+  box-shadow: 1px 1px 10px #AAAAAA;
+  width: 98%;
+  opacity: 0.7;}
+
+#menu strong {
+  background: #FFFFFF url(https://sig.ufla.br/layout/ufla_responsivo/imgs/input_focus.png) top left repeat-y;
+  border: 1px outset #FFFFFF;
+  display: block;
+  font-variant: small-caps;
+  text-align: center;
+  text-shadow: #AAAAAA 1px 2px 2px;
+}
+
+#menu ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+#menu ul li {
+  margin-top: 2px;
+  padding: 0px 4px 0px 4px;
+}
+
+#menu a {
+  color: #226622;
+}
+#menu a:hover {
+  color: #338833;
+}
+
+#menu ul li a {
+  background: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/item_menu.gif) 0% 60% no-repeat;
+  display: inline;
+  font-weight: 400;
+  min-height: 18px;
+  padding-left: 20px;
+}
+#menu ul li a:hover {
+  background-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/item_menu_hover.gif);
+}
+
+#menu ul + div,
+#menu p + div {
+  border-top: 2px #007700 dotted;
+  color: #606677;
+  font-size: 80%;
+  text-align: center;
+}
+#menu ul + div p {
+  display: block;
+  margin: 5px;
+}
+#menu ul + div p a {
+  display: inline;
+  line-height: 20px;
+  padding: 2px 0;
+}
+
+#menu ul + div p + p {
+  background-color: #DDDDDD;
+  border: 1px outset #CCCCCC;
+  padding: 2px;
+}
+
+#menu #login_usuario {
+  background: url(https://sig.ufla.br/imgs/icones/menu_usuario.gif) 0% 60% no-repeat;
+  padding-left: 17px;
+}
+
+#menu #opcoes {
+  background: url(https://sig.ufla.br/imgs/icones/ferramentas.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+}
+
+#menu #ajuda {
+  background: url(https://sig.ufla.br/imgs/icones/menu_ajuda.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+}
+
+#menu #saida {
+  background: url(https://sig.ufla.br/imgs/icones/menu_sair.gif) 0% 60% no-repeat;
+  padding-left: 20px;
+}
+
+#aviso_sair {
+  background-color: #FFFFDD;
+  border: 1px solid #444400;
+  font-size: .7em;
+  font-weight: bolder;
+  margin: 2em 1em 1em 1em;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 10px 2px #FF0000;
+}
+
+/*
+ * RODAPE
+ */
+#rodape {
+  background: transparent url(https://sig.ufla.br/layout/ufla_responsivo/imgs/rodape.jpg) top left repeat-x;
+  color: #606060;
+  float: left;
+  font-size: 70%;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#rodape address {
+  display: inline;
+}
+
+#rodape #voltar_topo {
+  border: 0px;
+  background: #FFFFFF url(https://sig.ufla.br/layout/ufla_responsivo/imgs/topo.jpg) bottom left no-repeat;
+  display: block;
+  font-size: 0px;
+  height: 27px;
+  max-height: 27px;
+  left: 80%;
+  line-height: 0px;
+  margin: -27px 0px 0px 0px;
+  padding: 0px;
+  position: absolute;
+  text-indent: -10000px;
+  width: 51px;
+}
+
+#rodape div + p {
+  font-size: 90%;
+  font-variant: small-caps;
+}
+
+/*
+ * ELEMENTOS INVISIVEIS
+ */
+#container > hr,
+#conteudo > hr,
+#navegacao strong,
+#menu h2,
+#menu ul li span,
+#rodape h2 {
+  display: none;
+}
+
+
+/*
+ * CURSORES
+ */
+#titulo_pagina em,
+#menu h2,
+#menu strong,
+#menu ul + div,
+#menu p + div,
+#navegacao h2,
+#navegacao strong,
+#navegacao span,
+#navegacao em,
+#rodape {
+  cursor: default;
+}
+
+@media screen and (max-width: 900px) {
+  #titulo_pagina em {
+    display: none;
+  }
+  #conteudo_principal {
+    float: left;
+    width: 70%;
+  }
+  #conteudo_secundario {
+    float: left;
+    width: 30%;
+  }
+  .ocultar-jm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ocultar-jp {
+    display: none;
+  }
+  #titulo_pagina.cabecalho_fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  #titulo_pagina {
+    height: 50px;
+  }
+  #titulo_pagina h1 img {
+    height: 48px;
+  }
+  #menu_usuario_alt {
+    display: inline-block;
+  }
+  #titulo_pagina h1 {
+    font-size: 30px;
+  }
+  #titulo_pagina h1,
+  #titulo_pagina em {
+    line-height: 50px;
+  }
+  #conteudo_principal {
+    float: none;
+    width: 100%;
+  }
+  #navegacao {
+    margin-bottom: 10px;
+  }
+  #navegacao.cabecalho_fixo {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  #menu {
+    width: auto;
+  }
+  #menu.cabecalho_fixo {
+    position: fixed;
+    opacity: 1;
+    top: 51px;
+    display: none;
+    z-index: 90;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  #menu.cabecalho_fixo h2 + strong {
+    border-radius: 0;
+  }
+  #menu.cabecalho_fixo:hover {
+    opacity: 1;
+  }
+  #conteudo_secundario {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  div.erro, div.aviso {
+    width: 100%;
+    margin: 0px;
+    left: 0;
+  }
+  .dados, .lista {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .tabela {
+    font-size: 0.8em;
+  }
+  div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca span {
+    float: none;
+    display: block;
+    width: auto;
+    font-weight: bold;
+  }
+  div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca div {
+    float: none;
+    display: block;
+    width: auto !important;
+    text-align: left;
+  }
+  div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca select, 
+  div.resultado_campo_selecao_busca div.rodape_campo_selecao_busca input,
+  div.resultado_campo_selecao_busca div.cabecalho_campo_selecao_busca input {
+    width: 100%;
+  }
+  div.resultado_campo_selecao_busca input[type='button'] {
+    margin: 0;
+  }
+}
+/******************
+ * ESTILOS CHROME *
+ ******************/
+
+a {
+  -webkit-transition: color 2s;
+}
+a:hover {
+  -webkit-transition: color 1s;
+}
+
+a img {
+  -webkit-transition: opacity 2s, -webkit-opacity 2s;
+}
+a:hover img {
+  -webkit-transition: opacity 1s, -webkit-opacity 1s;
+}
+
+#navegacao + hr { clear: both; }
+
+#menu {
+  -webkit-box-shadow: 1px 1px 10px #AAAAAA;
+  -webkit-opacity: 0.7;}
+
+#menu:hover,
+#menu:focus,
+#menu:active {
+  -webkit-opacity: 0.9;
+}
+#aviso_sair {
+  -webkit-border-radius: 1em;
+  -webkit-box-shadow: 0px 0px 10px 2px #FF0000;
+}
+
+/* Botao de ajuda */
+.bloco_ajuda_aberto a.ajuda,
+.bloco_ajuda_fechado a.ajuda {
+  -webkit-border-radius: .5em;
+}
+
+/* Abas */
+.abas .nomes_abas a {
+  top: 1px;
+}
+.abas .nomes_abas a.ativa {
+  top: 2px;
+}
+
+/* Caixa de opcoes */
+.caixa {
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 18px;
+}
+
+.caixa h2 {
+  -webkit-border-top-left-radius: 13px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+.caixa h2 .bt_fechar {
+  -webkit-border-radius: 5px;
+}
+
+div.carregando {
+  -webkit-border-bottom-right-radius: 1em;
+}
+
+.opcoes {
+  -webkit-border-radius: 2em;
+}
+
+.abas .nomes_abas a {
+  -webkit-border-top-left-radius: 0.7em;
+  -webkit-border-top-right-radius: 0.7em;
+}
+
+div.erro,
+div.aviso {
+  -webkit-border-bottom-right-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -webkit-box-shadow: 1px 1px 7px #808080;
+}
+
+.dados {
+  -webkit-box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+.dados fieldset {
+  -webkit-border-radius: 10px;
+}
+.dados fieldset legend {
+  -webkit-border-radius: 10px;
+}
+
+div.opcoes {
+  -webkit-box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+.lista .opcoes {
+  -webkit-box-shadow: none;
+}
+
+/* Formularios */
+.formulario {
+  min-height: 100px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px #AAAAAA;
+}
+.formulario fieldset {
+  -webkit-border-radius: 20px;
+}
+.formulario fieldset legend {
+  -webkit-border-radius: 15px;
+}
+.formulario input.botao {
+  -webkit-border-radius: 20px;
+  -webkit-transition: background-color 2s, color 2s;
+}
+.formulario input.botao:hover {
+  -webkit-transition: background-color 1s, color 1s;
+}
+
+.formulario label {
+  -webkit-transition: color 2s;
+}
+.formulario label:hover {
+  -webkit-transition: color 1s;
+}
+
+/* Tabelas */
+table.tabela {
+  -webkit-box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+table.tabela tr { 
+  -webkit-transition: background-color 2s;
+}
+
+table.tabela tr:hover {
+  -webkit-transition: background-color 1s;
+}
+
+.formulario .tabela {
+  -webkit-box-shadow: none;
+}/*
+ * FORMULARIOS
+ */
+.formulario {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 1px 10px #AAAAAA;
+  display: block;
+  padding: 3px 4px;
+  text-align: center;
+  width: auto;
+}
+
+/* Titulo */
+.formulario h3 {
+  clear: both;
+  cursor: default;
+  line-height: 1.5em;
+  text-shadow: #669977 2px 2px 4px;
+  width: 100%;
+}
+
+.formulario * + h3 {
+  margin-top: .7em;
+}
+
+.formulario p,
+.formulario blockquote {
+  text-align: left !important;
+}
+
+/* Espaco para label e campo */
+.formulario .campo {
+  clear: both;
+  float: left;
+  margin: 1.5px 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Label */
+.formulario label {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 2%;
+  transition: color 2s;
+  word-wrap: break-word;
+}
+
+.formulario label:hover {
+  color: #009900;
+  transition: color 1s;
+}
+
+.formulario div.campo label {
+  clear: left;
+  display: block;
+  float: left;
+  padding: 0 2% 0 0;
+  text-align: right;
+  width: 25%;
+}
+
+.formulario div.campo label:after {
+  content: ':';
+  word-wrap: normal;
+}
+
+/* Fieldset */
+.formulario fieldset {
+  border-radius: 10px;
+  background-color: #E5E5E5;
+  border: 1px outset #C5C5C5;
+  clear: both;
+  float: left;
+  margin: 15px 0.5% 10px 0.5%;
+  width: 99%;
+  padding: 10px 5px;
+}
+
+.formulario fieldset legend {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 1px outset #DDE0EE;
+  font-weight: bold;
+  padding: 0px 15px 0px 15px;
+  margin-left: 15px;
+}
+
+/* Espaco para o campo */
+.formulario div.campo div {
+  clear: none;
+  float: left;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  width: 74%;
+}
+
+
+/*
+ * BOTOES
+ */
+.formulario input.botao {
+  border-radius: 20px;
+  background-color: #DDDDDD;
+  border: 1px outset #DDDDDD;
+  color: #006600;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 3px 0 0 0;
+  padding: 0.2em 1em 0.2em 1em;
+  transition: background-color 2s, color 2s;
+}
+
+.formulario input[type="submit"] {
+  background: #DDDDDD url(https://sig.ufla.br/imgs/icones/enviar.gif) 10% 50% no-repeat;
+  padding-left: 22px;
+}
+
+.formulario input[type="reset"] {
+  background: #DDDDDD url(https://sig.ufla.br/imgs/icones/restaurar.gif) 10% 50% no-repeat;
+  padding-left: 22px;
+}
+
+.formulario input.botao:hover {
+  background-color: #CCCCCC;
+  color: #001100;
+  text-decoration: blink;
+  transition: background-color 1s, color 1s;
+}
+
+.formulario input.botao:active {
+  background-color: #CCCCCC;
+  border: 1px inset #CCCCCC;
+  color: #000033;
+}
+
+/* Fieldset de campos Radio ou Checkbox */
+.formulario label.escolha,
+.formulario fieldset.escolha label {
+  display: block;
+  text-align: left;
+}
+
+.formulario fieldset.escolha label:hover {
+  background-color: #CCDDD5;
+  color: #006600;
+  outline: 1px dotted #006600;
+}
+
+/* CAMPO BOOL */
+.formulario .campo_bool {
+  display: block;
+  padding-left: 40px;
+  text-align: left;
+}
+.formulario .campo_bool * {
+  clear: none !important;
+  display: inline !important;
+  float: none !important;
+  margin-right: 1em;
+  width: auto;
+}
+.formulario .campo_bool label:after {
+  content: '' !important;
+}
+
+/*
+ * CAMPOS DE TEXTO E SELECT
+ */
+
+.formulario input.file,
+.formulario input.texto,
+.formulario input.ddd,
+.formulario input.numero,
+.formulario input.ramal,
+.formulario input.busca,
+.formulario select,
+.formulario textarea {
+  background-color: #DDDDDD;
+  background-repeat: no-repeat;
+  background-position: top left;
+  border: 1px #DDDDDD inset;
+  color: #000000;
+  margin: 0px;
+  width: 100%;
+}
+
+.formulario input.busca {
+  width: 50% !important;
+}
+
+.formulario input.file:focus,
+.formulario input.texto:focus,
+.formulario input.ddd:focus,
+.formulario input.numero:focus,
+.formulario input.ramal:focus,
+.formulario input.busca:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  background-color: #FFFFFF;
+  border: 1px #F5FFF5 outset;
+  color: #006600;
+}
+
+.formulario input.texto,
+.formulario input.ddd,
+.formulario input.numero,
+.formulario input.ramal,
+.formulario input.busca,
+.formulario textarea {
+  padding: 1px 3px 1px 3px;
+}
+
+.formulario textarea {
+  font-family: Arial;
+  font-size: 1.01em;
+}
+
+.formulario input.texto,
+.formulario input.ddd,
+.formulario input.numero,
+.formulario input.ramal,
+.formulario input.busca {
+  background-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/input.png);
+  background-repeat: repeat-y;
+}
+
+.formulario input.texto:focus,
+.formulario input.ddd:focus,
+.formulario input.numero:focus,
+.formulario input.ramal:focus,
+.formulario input.busca:focus {
+  background-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/input_focus.png);
+  background-repeat: repeat-y;
+}
+
+.formulario input.seta {
+  background-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/input.png), url(https://sig.ufla.br/imgs/icones/seta_baixo_pequena.png);
+  background-repeat: repeat-y, no-repeat;
+  background-position: top left, center right;
+  font-weight: normal;
+}
+
+.formulario input.seta:focus {
+  background-image: url(https://sig.ufla.br/layout/ufla_responsivo/imgs/input_focus.png), url(https://sig.ufla.br/imgs/icones/seta_baixo_pequena.png);
+  background-repeat: repeat-y, no-repeat;
+  background-position: top left, center right;
+}
+
+/* Geral */
+.formulario .block {
+  clear: both;
+  display: block;
+  padding: 3px 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.formulario .block .comentario {
+  background: transparent url(https://sig.ufla.br/imgs/icones/aviso.gif) 0% 50% no-repeat;
+  margin: 0px 10px !important;
+  padding-left: 25px;
+  text-align: justify !important;
+}
+
+
+/*
+ * TABELAS
+ */
+table.tabela {
+  border-spacing: 0px;
+  box-shadow: 1px 1px 10px #AAAAAA;
+}
+
+table.tabela caption {
+  font-weight: bold;
+  margin: 2px auto;
+}
+
+table.tabela th,
+table.tabela td {
+  text-align: center;
+  padding: .1em .5em;
+  vertical-align: middle;
+}
+
+table.tabela tbody th,
+table.tabela tbody td {
+  font-weight: normal;
+}
+
+.formulario h3,
+table.tabela thead th {
+  background-color: #FFFFFF;
+  border: 1px inset #FFFFFF;
+  color: #000000;
+}
+
+table.tabela tfoot td {
+  background-color: #F5F5F5;
+  border: 1px inset #EEEEEE;
+  color: #000000;
+}
+
+table.tabela tbody tr + tr td,
+table.tabela tbody tr + tr th {
+  border-top: 1px solid #66BB88;
+}
+table.tabela tr {
+  transition: background-color 2s;
+}
+
+table.tabela tr:hover {
+  background-color: #CCDDD5;
+  cursor: default;
+  transition: background-color 1s;
+}
+
+table.indice tbody td {
+  background-color: #DDDDDD;
+  border: 1px outset #DDDDDD;
+  font-size: 0.8em;
+  padding: .1em .5em;
+  width: 33%;
+}
+
+table.indice tbody td:hover {
+  background-color: #EEEEEE;
+  border: 1px outset #EEEEEE;
+}
+
+/* CAMPOS CAPTCHA */
+#area_captcha .captcha_imagem * {
+  float: left;
+}
+#area_captcha .captcha_imagem input {
+  margin-left: 1em;
+  margin-top: .3em;
+}
+#area_captcha .captcha_imagem input.texto {
+  width: 7em;
+}
+#area_captcha .captcha_imagem input.botao {
+  padding: 2px 3px;
+}
+#img_captcha {
+  border: 1px inset #CCCCCC;
+}
+
+/*
+ * FORMULARIOS E TABELAS
+ */
+.formulario,
+table.tabela {
+  background-color: #EEEEEE;
+  border: 1px outset #CCCCCC;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario hr {
+  border-bottom: 1px #AAAAAA solid;
+  margin: 1em 0;
+}
+
+.formulario .tabela {
+  box-shadow: none;
+}
